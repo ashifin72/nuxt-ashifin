@@ -1,0 +1,271 @@
+@import "var"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .portfolio
+    &__titleblock
+      h3
+        font-size: 30px
+        letter-spacing: 4px
+        span
+          font-size: 27px
+      h2
+        font-size: 35px
+        letter-spacing: 4px
+    &__button
+      margin-top: 60px
+      left: auto
+      margin-left: auto
+      right: 0
+      margin-right: 17%
+    &__filter
+      bottom: 0px
+      background: $foncolor
+      height: 35px
+      padding-top: 2px
+      &-fon
+        transform: skewX(10deg)
+      &-fon > *
+        transform: skewX(-10deg)
+  .p-project__header-content
+    .data-block
+      padding-left: 50px
+  .driver
+    .wordpress
+      width: 90%
+      left: -8%
+
+
+// ≥992px
++media-breakpoint-down(md)
+  .card
+    width: 340px
+    &__img
+      width: 340px
+      height: 190px
+  .portfolio
+    padding-bottom: 50px
+    &__titleblock
+      h3
+        font-size: 30px
+        letter-spacing: 4px
+        span
+          font-size: 27px
+      h2
+        font-size: 35px
+        letter-spacing: 4px
+    &__footer
+      height: 250px
+  .portfolio__slider
+    margin-left: -380px
+    margin-top: 20px
+    width: 760px
+    height: 250px
+    .slider
+      &__img-block img
+        height: 100%
+      &__signature
+        bottom: 0px
+        right: -10px
+    .slider__paginate
+      bottom: -40px
+      left: 50%
+  .p-project
+    &__header-fon
+      &:before
+        top: 18px
+    &__btn
+      left: 233px
+      top: -21px
+      .card__order
+        &::after
+          content: ''
+          position: absolute
+          background: $darc3
+          width: 150px
+          height: 1px
+          left: -150px
+          top: 20px
+  .p-project__header-content
+    .data-block
+      padding-left: 10px
+    .title-block
+      .data-cat
+        font-size: 20px
+      .title-project
+        left: 200px
+        font-size: 30px
+  //.p-project__body
+  //  width: 100%
+  .driver
+    .wordpress
+      width: 130%
+      left: -30%
+// ≥768px
++media-breakpoint-down(sm)
+  .portfolio
+    padding-bottom: 120px
+    &__title-offers
+      margin-top: 0
+      font-size: 30px
+    &__footer
+      height: 400px
+    &__titleblock
+      text-align: center
+      h3
+        font-size: 40px
+        letter-spacing: 4px
+        span
+          font-size: 37px
+      h2
+        font-size: 45px
+        letter-spacing: 4px
+    &__button
+      width: 200px
+      margin-top: 300px
+      left: 50%
+      right: auto
+      margin-left: -100px
+      margin-right: 60%
+    &__slider
+      position: relative
+      top: -30%
+      left: 0
+      margin-left: 0px
+      margin-top: 0px
+      width: 100%
+      height: auto
+      .slider
+        &__img-block img
+          height: 100%
+        &__signature
+          right: 20px
+  .navbar
+    &__menu
+      display: none
+    &__toggler
+      display: block
+  .p-project__header-content
+    span
+      font-size: 15px
+    .title-block
+      margin-top: 70px
+      .title-project
+        margin-left: 15px
+        font-size: 30px
+  .card
+    width: 400px
+    margin: 15px auto
+    &__img
+      width: 400px
+      height: 220px
+@media (max-width: 660px)
+  .portfolio__filter
+    display: none
+// ≥576px
++media-breakpoint-down(xs)
+  .card
+    max-width: 340px
+    &__img
+      width: 340px
+      height: 180px
+  .portfolio
+    padding-bottom: 150px
+    &__name
+      display: none
+    &__slider
+      top: -65%
+      .item-slider
+        display: block
+        .col-cont, .col-img
+          width: 100%
+      .slider__content
+        width: 90%
+
+    &__button
+      margin-top: 220px
+
+  .headline__default
+    height: 134px
+  .navbar__lang
+    top: 67px
+    left: auto
+    right: 0
+    margin-right: 12px
+  .p-project
+    &__header-fon
+      &:before
+        top: 12px
+  .feedback__title-block
+    .data-cat
+      font-size: 20px
+      top: -10px
+  .driver
+    .wordpress
+      width: 100%
+      left: -10%
+  .p-project
+    &__btn
+      left: 183px
+      .card__order
+        &::after
+          width: 100px
+          left: -100px
+
+@media (max-width: 440px)
+  .portfolio
+    &__titleblock
+      padding: 0
+      text-align: center
+      h3
+        font-size: 30px
+        span
+          font-size: 30px
+      h2
+        font-size: 40px
+    &__button
+      margin-top: 190px
+    &__slider
+      top: -78%
+    &__footer
+      height: 320px
+  .p-project__header-content
+    .title-block
+      padding-left: 10px
+      .data-cat
+        font-size: 14px
+      .title-project
+        left: 140px
+        font-size: 25px
+        top: 5px
+@media (max-width: 440px)
+  .feedback__title-block
+    .data-cat
+      font-size: 15px
+      top: -4px
+  .p-project
+    &__btn
+      left: 143px
+      .card__order
+        &::after
+          width: 60px
+          left: -60px
+  .wordpress
+    p, span
+      font-size: 16px
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
